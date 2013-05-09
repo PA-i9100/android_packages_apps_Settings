@@ -58,6 +58,7 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
+
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
@@ -195,6 +196,13 @@
             android:targetPackage="com.paranoid.preferences"
             android:targetClass="com.paranoid.preferences.MainActivity" />
     </header>
+
+    <!-- System -->
+    <header
+        android:id="@+id/system_settings"
+        android:icon="@drawable/ic_settings_system"
+        android:fragment="com.android.settings.cyanogenmod.SystemSettings"
+        android:title="@string/system_settings_title" />
 
     <!-- Themes -->
     <header

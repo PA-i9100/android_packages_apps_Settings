@@ -120,7 +120,8 @@ public class Settings extends PreferenceActivity
             R.id.system_section,
             R.id.date_time_settings,
             R.id.about_settings,
-            R.id.accessibility_settings
+            R.id.accessibility_settings,
+            R.id.system_settings
     };
 
     private SharedPreferences mDevelopmentPreferences;
@@ -838,4 +839,5 @@ public class Settings extends PreferenceActivity
     public static class AndroidBeamSettingsActivity extends Settings { /* empty */ }
     public static class WifiDisplaySettingsActivity extends Settings { /* empty */ }
     public static class DreamSettingsActivity extends Settings { /* empty */ }
+    public static class SystemSettingsActivity extends Settings { /* empty */ }
 }
