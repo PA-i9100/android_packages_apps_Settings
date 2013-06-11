@@ -4349,6 +4349,9 @@
 
     <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_notifications_switch_label">Show notifications</string>
+    <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Blacklist HALO notifications</string>
+    <string name="app_halo_label_white">Whitelist HALO notifications</string>
 
     <!--  Help URLs for some screens. Not specified here. Specified in product overlays --><skip/>
     <!-- Help menu label [CHAR LIMIT=20] -->
@@ -4410,6 +4413,7 @@
     <string name="notification_sound_limiter_title">Notification sound limit</string>
     <string name="notification_sound_limiter_summary">Sets the allowed delay between incoming notifications</string>
     <string name="notification_sound_default_time">Default</string>
+    <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
 
     <!-- Display settings screen, notification light settings -->
     <string name="notification_light_general_title">General</string>
@@ -4463,6 +4467,9 @@
     <!-- Allow rotation -->
     <string name="allow_rotate_title">Allow rotation</string>
     <string name="allow_rotate_summary">Enables landscape mode on lock screen</string>
+    <!-- Quick Unlock -->
+    <string name="allow_quick_unlock_title">Quick Unlock</string>
+    <string name="allow_quick_unlock_summary">Enables quick unlock for lock screen</string>
     <!-- Lock screen see through -->
     <string name="see_through_title">See through</string>
     <string name="see_through_summary">Allows to see the application behind the lock screen</string>
@@ -4521,6 +4528,16 @@
     <string name="tool_bar_settings">Toolbars</string>
     <string name="tool_bar_status_header">Status bar</string>
     <string name="tool_bar_navigation_header">Navigation bar</string>
+
+    <!-- HALO -->
+    <string name="halo_hide_title">Hide HALO after activity</string>
+    <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
+    <string name="halo_reversed_title">Reverse HALO gestures</string>
+    <string name="halo_reversed_summary">Applies tasking or dragging to the double-tap-swipe gesture</string>
+    <string name="halo_state_title">HALO policy</string>
+    <string name="halo_state_summary">For black/white-listing notifications pinging through HALO</string>
+    <string name="halo_state_black">Black list</string>
+    <string name="halo_state_white">White list</string>
 
     <!-- Quick pulldown -->
     <string name="quick_pulldown_title">Quick pulldown</string>
@@ -4645,13 +4662,22 @@
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Large</string>
     <string name="pie_size_gigantic">Gigantic</string>
+    <string name="pie_size_monster">Monster</string>
+
+    <string name="pie_angle_title">Pie angle</string>
+    <string name="pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
+    <string name="pie_angle_none">None (old)</string>
+    <string name="pie_angle_small">Small</string>
+    <string name="pie_angle_big">Normal (default)</string>
+    <string name="pie_angle_huge">Big</string>
+    <string name="pie_angle_super">Huge</string>
     
     <string name="pie_gap_title">Item gap</string>
     <string name="pie_gap_summary">Adjust the gap that separates pie elements</string>
     <string name="pie_gap_none">None</string>
     <string name="pie_gap_small">Small</string>
-    <string name="pie_gap_big">Big</string>
-    <string name="pie_gap_huge">Huge (default)</string>
+    <string name="pie_gap_big">Big (default)</string>
+    <string name="pie_gap_huge">Huge</string>
 
     <string name="pie_center_title">Middle alignment</string>
     <string name="pie_center_summary">Center pie on the trigger edge</string>
@@ -4667,14 +4693,11 @@
 
     <string name="pie_trigger_title">Trigger area</string>
     <string name="pie_trigger_summary">Determine the size of the region that registers swipes</string>
-    <string name="pie_trigger_none">None</string>
+    <string name="pie_trigger_none">None (Pie disabled)</string>
     <string name="pie_trigger_small">@string/pie_size_small</string>
     <string name="pie_trigger_normal">@string/pie_mode_default</string>
-    <string name="pie_trigger_big">@string/pie_gap_big</string>
-    <string name="pie_trigger_huge">@string/pie_gap_huge</string>
-
-    <string name="pie_restart_launcher_title">Redraw launcher</string>
-    <string name="pie_restart_launcher_summary">Programmatically changing screen size can have adverse visual effects. This option allows your launcher to regain sanity at the cost of a slight blackout (recommended)</string>
+    <string name="pie_trigger_big">Big</string>
+    <string name="pie_trigger_huge">Huge</string>
 
     <!-- Navigation Bar #CM -->
     <string name="navigation_reset_title">@string/lock_screen_shortcuts_reset</string>
@@ -4766,6 +4789,13 @@
     <string name="lockscreen_background_color_fill">Color fill</string>
     <string name="lockscreen_background_custom_image">Custom image</string>
     <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
+
+    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
+    <string name="auto_brightness_sensitivity_verylow">Very low</string>
+    <string name="auto_brightness_sensitivity_low">Low</string>
+    <string name="auto_brightness_sensitivity_medium">Medium</string>
+    <string name="auto_brightness_sensitivity_high">High</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
 
     <!-- ======================================================================================= -->
     <!-- I9100 ADDITIONS -->
