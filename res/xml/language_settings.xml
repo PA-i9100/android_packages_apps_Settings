@@ -92,6 +92,12 @@
                 android:key="stylus_gestures"
                 android:title="@string/gestures_settings_title" />
 
+        <CheckBoxPreference android:key="stylus_icon_enabled"
+             android:title="@string/stylus_icon_enabled_title"
+             android:summary="@string/stylus_icon_enabled_summary"
+             android:defaultValue="false"
+              android:persistent="false" />
+
         <com.android.settings.PointerSpeedPreference
                 android:key="pointer_speed"
                 android:title="@string/pointer_speed"
@@ -116,5 +122,12 @@
                 android:title="@string/disable_fullscreen_keyboard_title"
                 android:summary="@string/disable_fullscreen_keyboard_summary"
                 android:defaultValue="false" />
+        <ListPreference
+                android:key="volume_key_cursor_control"
+                android:persistent="false"
+                android:dialogTitle="@string/volume_key_cursor_control_title"
+                android:title="@string/volume_key_cursor_control_title"
+                android:entries="@array/volume_key_cursor_control_entries"
+                android:entryValues="@array/volume_key_cursor_control_values" />
     </PreferenceCategory>
 </PreferenceScreen>
